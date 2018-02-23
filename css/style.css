@@ -2,8 +2,10 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: dadada;
+html, body {
+  background-color: #dadada;
+  font: 10px;
+  height: 100%;
 }
 
 div {
@@ -13,36 +15,53 @@ div {
   width: 100%;
 }
 
+.container {
+  margin: 20px auto;
+  min-width: 50%;
+  height: 50%;
+  position: relative;
+}
+
+.top-left {
+  position: absolute;
+}
+
+.preview {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50%;
+}
+
+.baku {
+  background-image: url(../images/baku.jpg);
+}
+
+.london {
+  background-image: url(../images/london.png);
+}
+
+.madrid {
+  background-image: url(../images/madrid.jpg);
+}
+
+.rome {
+  background-image: url(../images/rome.jpg);
+}
+
 h1 {
   font-family: system-ui, sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 h2 {
   font-family: serif;
   font-size: 20px;
   text-transform: capitalize;
-}
-
-.container {
-  margin: 20px auto;
-  width: 100%;
-  position: relative;
-}
-
-.top-left {
-  width: 10%;
-  position: absolute;
-  top: 30px;
-  left: 30px;
-}
-
-.img {
-  max-width: 100%;
-  height: auto;
+  padding-top: 30px;
+  padding-left: 30px;
 }
 
 @media screen and (min-width: 575px) {
